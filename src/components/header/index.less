@@ -1,0 +1,47 @@
+.header-content{
+    .header-top{
+        height: 60px;
+        line-height: 60px;
+        text-align: right;
+        padding: 0 20px;
+        .login-out{
+            padding-left: 30px;
+        }
+    }
+    .header-bottom{
+        height: 40px;
+        line-height: 40px;
+        border-top: 1px solid #f9c700;
+        box-sizing: border-box;
+        padding: 0 20px;
+        position: relative;
+        .header-bottom-breadcrumb{
+            text-align: center;
+            font-size: 18px;
+            &:after{
+                z-index: 999;
+                display:block;
+                content:'';
+                border-width:8px 8px 8px 8px;
+                border-style:solid;
+                border-color:#fff transparent transparent transparent;
+                
+                /* 定位 */
+                position:absolute;
+                left:45%;
+                top:100%;
+            }
+        }
+        .header-bottom-weather{
+            text-align: right;
+            .weather-item{
+                padding-left: 30px;
+                img{
+                    width: 30px;
+                    height: 20px;
+                    padding-right: 3px;
+                }
+            }
+        }
+    }
+}

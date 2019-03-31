@@ -1,0 +1,35 @@
+.navlist-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #001529;
+    color: #fff;
+    overflow: hidden;
+    .navlist-logo{
+        height: 60px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            min-height: 70%;
+            max-height: 70%;
+        }
+        p{
+            height: 30%;
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    .navlist-menu{
+        flex: 1;
+        overflow-y: scroll;
+    }
+    .navlist-menu::-webkit-scrollbar {
+        display: none;
+    }
+}
